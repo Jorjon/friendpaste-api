@@ -3,7 +3,7 @@ import os
 from distutils.core import setup
 
 
-version="0.1.9.2a1"
+version="0.1.1-alpha"
 
 here = os.path.abspath(os.path.dirname(__file__))
 with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
@@ -11,7 +11,7 @@ with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
   name='friendpaste-api',
-  packages=['friendpaste-api'],
+  packages=['friendpaste'],
   version=version,
   description='Simple Python API for friendpaste.com',
   long_description=long_description,

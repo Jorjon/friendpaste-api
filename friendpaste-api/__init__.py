@@ -1,1 +1,0 @@
-from .friendpaste import post_text

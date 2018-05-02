@@ -1,0 +1,1 @@
+from .friendpaste import fp_write, fp_read, fp_create
