@@ -3,7 +3,7 @@ import os
 from distutils.core import setup
 
 
-version="0.1.1-alpha"
+version="0.1.2-alpha"
 
 here = os.path.abspath(os.path.dirname(__file__))
 with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:

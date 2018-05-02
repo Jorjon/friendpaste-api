@@ -6,6 +6,8 @@ def fp_read(hash, json=False):
     url = '%s/%s/raw' % (FP_URL, hash)
     try:
         r = requests.get(url)
+        if r.status_code != 200:
+            raise requests.HTTPError
     except requests.ConnectionError:
         return None
     return r.json() if json else r.text
@@ -20,6 +22,8 @@ def fp_write(hash, text, title="", language="text"):
         "psubmit": "Save changes"
     }
     r = requests.post('%s/%s/edit' % (FP_URL, hash), data=payload)
+    if r.status_code != 200:
+        raise requests.HTTPError
     return r.text
 
 
@@ -35,6 +39,8 @@ def fp_create(text, title="", language="text", code=""):
         "psubmit": "Submit post"
     }
     r = requests.post('%s/' % FP_URL, data=payload)
+    if r.status_code != 200:
+        raise requests.HTTPError
     return r.url.replace('%s/' % FP_URL, '')
 
 
