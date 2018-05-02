@@ -23,3 +23,5 @@ Usage
 
     # Update post using hash
     fp_write('y0Z1ia3h47j8ddRSn2QiPy', 'My new text')
+
+https://pypi.org/project/friendpaste-api/

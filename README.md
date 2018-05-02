@@ -19,3 +19,5 @@ fp_write('y0Z1ia3h47j8ddRSn2QiPy', 'My new text')
 python setup.py sdist
 twine upload dist/*
 ```
+
+https://pypi.org/project/friendpaste-api/
