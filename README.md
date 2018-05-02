@@ -8,8 +8,8 @@
 
 ## Usage
 ```python
-from friendpaste import post_text
+from friendpaste import fp_write
 
 # Update post using hash
-post_text('My new title', 'My new text'. 'y0Z1ia3h47j8ddRSn2QiPy')
+fp_write('y0Z1ia3h47j8ddRSn2QiPy', 'My new text')
 ```
